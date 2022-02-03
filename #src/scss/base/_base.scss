@@ -1,0 +1,55 @@
+// BASIC STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    color: var(--black-color);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-family: var(--body-font);
+    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    color: var(--black-color);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    line-height: 54px;
+}

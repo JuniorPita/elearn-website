@@ -1,0 +1,45 @@
+// CSS VARIABLES
+:root {
+    // HSL Colors
+    --hue: 275;
+    
+    --main-color: hsl(var(--hue), 100%, 68%);
+    --secondary-color: hsl(var(--hue), 47%, 24%);
+    --description-color: hsl(var(--hue), 22%, 31%);
+    --subtitle-color: hsl(var(--hue), 58%, 62%);
+    --white-color: hsl(var(--hue), 100%, 100%);
+    --black-color: hsl(var(--hue), 0%, 0%);
+
+    // Font and typography
+    --body-font: 'Poppins', sans-serif;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --normal-font-size: 18px;
+    --small-font-size: 16px;
+    --smaller-font-size: 14px;
+    --smallest-font-size: 12px;
+
+    // Font weight
+    --font-black: 900;
+    --font-bold: 700;
+    --font-medium: 500;
+    --font-regular: 400;
+
+    // Z-index
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --h1-font-size: 48px;
+        --h2-font-size: 40px;
+        --h3-font-size: 24px;
+        --normal-font-size: 20px;
+        --small-font-size: 18px;
+        --smaller-font-size: 16px;
+        --smallest-font-size: 14px;
+    }
+}

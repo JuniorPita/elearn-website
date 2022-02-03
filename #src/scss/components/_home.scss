@@ -1,0 +1,65 @@
+// STYLES FOR HOME BLOCK
+.home {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__title {
+        position: relative;
+        font-size: var(--h1-font-size);
+        line-height: 68px;
+        color: var(--secondary-color);
+
+        span {
+            color: var(--main-color);
+        }
+
+        &::before {
+            content: '';
+            @include ourBefore;
+        }
+    }
+
+    &__description {
+        font-size: var(--small-font-size);
+        line-height: 24px;
+    }
+
+    &__apps {
+        display: flex;
+        column-gap: 30px;
+
+        &-appstore,
+        &-googleplay {
+            transition: .3s ease-in-out;
+
+            &:hover {
+                transform: translateX(4px);
+            }
+        }
+    }
+
+    &__right {
+        text-align: right;
+
+        img {
+            width: 585px;
+            height: 596px;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
+        }
+    }
+}

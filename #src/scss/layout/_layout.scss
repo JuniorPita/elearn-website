@@ -1,0 +1,40 @@
+// CSS LAYOUTS
+.section {
+    margin-top: 140px;
+}
+
+.container {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.button {
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    &:hover {
+        a {
+            color: var(--secondary-color);
+        }
+    }
+    
+    a {
+        font-weight: var(--font-bold);
+        font-size: var(--small-font-size);
+        color: var(--white-color);
+        transition: .3s ease-in-out;
+    }
+}
+
+@mixin ourBefore {
+    position: absolute;
+    top: -12px;
+    left: -20px;
+    width: 112px;
+    height: 77px;
+    background-image: url('../icons/fade-before.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
